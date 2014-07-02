@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TenMinuteMailTest
+namespace TenMinuteMailApiTest
 {
     [TestClass]
     public class TenMinuteMailDotComTest
