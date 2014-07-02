@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TenMinuteMailApi;
 
 namespace TenMinuteMailApiTest
 {
@@ -6,8 +7,13 @@ namespace TenMinuteMailApiTest
     public class TenMinuteMailDotComTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ObtainEmailBox_CalledFirstTime_NewEmailAddressReturned()
         {
+            var target = new TenMinuteMailDotCom();
+
+            var actual = target.ObtainEmailBox();
+
+            Assert.IsFalse(actual.Contains("@"));
         }
     }
 }
